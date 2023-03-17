@@ -1,0 +1,136 @@
+.InfoModal {
+    position: fixed;
+    inset: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    margin: 0 20px;
+    padding: 2rem;
+  }
+  .body{
+    color: black;
+  }
+  .title {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .ForgetPasswordModal p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(var(--accent-color));
+    border-radius: 25px;
+  }
+  
+  .inputField {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .inputField > input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .inputField > input:where(:focus, :valid) {
+    border-bottom-color: rgb(var(--accent-color));
+  }
+  
+  .inputFieldError > input {
+    border-bottom-color: red;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+  }
+  
+  .inputField input:is(:focus, :valid) ~ i {
+    color: rgb(var(--accent-color));
+  }
+  
+  .form .button {
+    margin-top: 35px;
+  }
+  
+  .form .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: rgb(var(--accent-color));
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button input:hover {
+    background-color: #265df2;
+  }
+  
+  .button input:disabled {
+    background-color: grey;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .backButton {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border: none;
+  }
+  
