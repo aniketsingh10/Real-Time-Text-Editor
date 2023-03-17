@@ -24,8 +24,17 @@ Features :-
 
 --------------------------------------------------------
 
-When a document is created user gets a unique id (used UUID), user can share this id and work with multiple users at same time. All others who have this id can read and write the document at same time.
+Whenever a document is created user gets a unique id (used UUID), user can share this id and work with multiple users at same time. All others who have this id can read and write the document at same time.
 
 Sample document
 
 ![image](https://user-images.githubusercontent.com/97386407/225886580-53745cf4-4910-4f5c-95dc-2d5dd8196fde.png)
+
+---------------------------------------------------------
+
+Links :-
+
+
+Hosted on :- https://real-time-text-editor.netlify.app/  (Netlify)
+
+Server :- https://real-time-text-editor.onrender.com  (Render)
